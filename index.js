@@ -90,7 +90,7 @@ class Customer {
   }
   totalSpent(){
     const total = 0
-    this.meals().map(meal =>{
+    this.meals().forEach(meal =>{
       total += meal.price
     })
     return total
