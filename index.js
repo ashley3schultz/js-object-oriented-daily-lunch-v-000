@@ -57,6 +57,9 @@ class Meal {
       return delivery.customer()
     })
   }
+  Meal.byPrice(){
+    
+  }
 }
 
 
