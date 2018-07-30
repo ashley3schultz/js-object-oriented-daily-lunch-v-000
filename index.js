@@ -90,8 +90,8 @@ class Customer {
   }
   totalSpent(){
     const total = 0
-    this.meals().forEach(meal =>{
-      total += meal.price
+    this.meals().reduce(function(a,b){
+      return a += b.price
     })
     return total
   }
